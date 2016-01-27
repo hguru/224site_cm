@@ -1,0 +1,67 @@
+/* This file will hold styles for all layouts using the alpha grid (i.e. not the mobile layout). */
+
+body {
+  /* background: #eef2f6 url(../images/bg.jpg) no-repeat center top; */
+}
+
+#block-nice-menus-1,
+.logo-img,
+.site-name-slogan,
+#block-search-form {
+  margin: 0px;
+}
+
+.logo-img {
+  text-align: left;
+}
+
+.site-name-slogan {
+  float: left;
+  text-align: left;
+  position: relative;
+}
+
+#block-search-form {
+  text-align: left;
+  float: right;
+  position: relative;
+}
+
+/* Footer */
+
+#section-content {
+  padding-bottom: 30px;
+}
+
+#section-footer {
+  padding: 60px 0px;
+  background-image: url(../images/footerbg-top.png), url(../images/footerbg.png);
+  background-repeat: repeat-x, repeat;
+  background-position: top, bottom;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+}
+
+#block-nodeblock-cm-footer .block-title {
+  display: none;
+}
+
+#section-footer h3 {
+  text-shadow: 1px 1px 1px #111;
+}
+
+#section-footer div.cell {
+  display: table-cell;
+  width: 558px;
+  vertical-align: top;
+  padding-right: 30px;
+}
+
+#section-footer a:link,
+#section-footer a:visited,
+#section-footer a:hover,
+#section-footer a:active {
+  color: #60c1fe;
+  text-decoration: underline;
+}
+

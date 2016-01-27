@@ -1,0 +1,42 @@
+<?php
+/**
+ * @file
+ * Code for the Media Gallery feature.
+ */
+
+include_once('cm_media_gallery.features.inc');
+
+function cm_media_gallery_theme($existing, $type, $theme, $path) {
+  return array(
+    'node__media_gallery' => array(
+      'render element' => 'elements',
+      'path' => drupal_get_path('module', 'cm_media_gallery') . '/theme',
+      'template' => 'node--media-gallery',
+  ),
+  );
+}
+
+function cm_media_gallery_preprocess_node(&$variables) {
+  if($variables['type'] == 'media_gallery') {
+    drupal_add_js(drupal_get_path('module', 'cm_media_gallery') . '/js/cm_media_gallery.js', 'file');
+    $variables['media'] = '';
+    foreach($variables['field_cm_media_gallery_files'] as $key => $file) {
+      $image_full_size = image_style_url('cm_media_gallery_full_size', $file['uri']);
+
+      $image_thumb = theme('image_style', array(
+        'style_name' => 'cm_media_gallery_square_thumbnail',
+        'path' => $file['uri']
+        ));
+
+      $image_description = $file['field_image_description'][$variables['language']][0]['value'];
+
+      $image_html = l($image_thumb, $image_full_size, array(
+        'attributes' => array('class' => array('image-gallery'), 'title' => $image_description),
+        'html' => TRUE
+      ));
+
+      $variables['media'] .= $image_html;
+    }
+  }
+}
+

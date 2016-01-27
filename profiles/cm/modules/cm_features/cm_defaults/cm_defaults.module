@@ -1,0 +1,49 @@
+<?php
+/**
+ * @file
+ */
+
+include_once('cm_defaults.features.inc');
+
+/**
+ * Implements hook_block_info.
+ */
+function cm_defaults_block_info() {
+  $blocks = array(
+    'mini_contact_form' => array(
+      'info' => t('Mini Contact Form'),
+    ),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view.
+ */
+function cm_defaults_block_view($delta = '') {
+  $block = array(
+    'subject' => '',
+    'content' => '',
+  );
+  switch ($delta) {
+    case 'mini_contact_form':
+      $block['subject'] = 'Contact Us';
+      $block['content'] = _cm_defaults_render_mini_contact_form();
+      return $block;
+    default:
+      return;
+  }
+}
+
+/**
+ * Get the standard contact form, then shorten the long text fields.
+ */
+function _cm_defaults_render_mini_contact_form() {
+  require_once drupal_get_path('module', 'contact') . '/contact.pages.inc';
+  $form = drupal_get_form('contact_site_form');
+  $form['name']['#size'] = 24;
+  $form['mail']['#size'] = 24;
+  $form['subject']['#size'] = 24;
+  return render($form);
+}
+

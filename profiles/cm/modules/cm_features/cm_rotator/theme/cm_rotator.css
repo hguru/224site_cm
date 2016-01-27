@@ -1,0 +1,32 @@
+.flex-caption {
+  width: 50%;
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 10px 10px;
+  overflow: hidden;
+  display: block;
+  border-top-right-radius: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.flex-caption p {
+  margin: 0px;
+}
+
+.flex-caption a:link,
+.flex-caption a:visited,
+.flex-caption a:hover,
+.flex-caption a:active {
+  border-bottom: 1px solid #6CBFFF;
+  color: #6CBFFF;
+  text-decoration: none;
+}
+
+.flex-caption a:hover {
+  border-bottom: 1px solid #89CCFF;
+  color: #89CCFF;
+}

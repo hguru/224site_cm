@@ -1,0 +1,23 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+
+.site-name-slogan {
+  left: 120px;
+  top: -80px;
+}
+
+#block-nice-menus-1 {
+  position: relative;
+  left: 120px;
+  top: -93px;
+}
+
+#block-nice-menus-1 ul {
+  text-align: left;
+}
+
+#block-search-form {
+  right: 0px;
+  top: -80px;
+}

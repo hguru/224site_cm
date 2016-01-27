@@ -1,0 +1,155 @@
+name = Cm
+description = Cm is a general purpose content management platform.
+core = 7.x
+
+; Core modules
+
+dependencies[] = block
+dependencies[] = blog
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contact
+dependencies[] = contextual
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+; Contrib modules
+
+dependencies[] = actions_permissions
+dependencies[] = addanother
+dependencies[] = addressfield
+dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
+dependencies[] = advanced_help
+dependencies[] = auto_nodetitle
+dependencies[] = block_class
+dependencies[] = bulk_export
+dependencies[] = calendar
+dependencies[] = coffee
+dependencies[] = context
+dependencies[] = context_layouts
+dependencies[] = context_ui
+dependencies[] = cpn
+dependencies[] = ctools
+dependencies[] = ctools_access_ruleset
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_popup
+dependencies[] = date_repeat
+dependencies[] = date_tools
+dependencies[] = date_views
+dependencies[] = defaultcontent
+dependencies[] = delta
+dependencies[] = delta_blocks
+dependencies[] = delta_ui
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = features
+dependencies[] = filefield_sources
+dependencies[] = flexslider
+dependencies[] = fontyourface_ui
+dependencies[] = google_fonts_api
+dependencies[] = fontsquirrel
+dependencies[] = geocoder
+dependencies[] = geofield
+dependencies[] = geofield_map
+dependencies[] = geophp
+dependencies[] = globalredirect
+dependencies[] = googleanalytics
+dependencies[] = imce
+dependencies[] = imce_wysiwyg
+dependencies[] = jquery_update
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = linkchecker
+dependencies[] = local_fonts
+dependencies[] = logintoboggan
+dependencies[] = logintoboggan_rules
+dependencies[] = media
+dependencies[] = mediafield
+dependencies[] = media_internet
+dependencies[] = menu_attributes
+dependencies[] = metatag
+dependencies[] = metatag_panels
+dependencies[] = metatag_views
+dependencies[] = nice_menus
+dependencies[] = nice_mega_dropdowns
+dependencies[] = node_reference
+dependencies[] = nodeblock
+dependencies[] = nodequeue
+dependencies[] = openid
+dependencies[] = openlayers
+dependencies[] = openlayers_ui
+dependencies[] = openlayers_views
+dependencies[] = page_manager
+dependencies[] = panelizer
+dependencies[] = panels
+dependencies[] = pathauto
+dependencies[] = proj4js
+dependencies[] = publishcontent
+dependencies[] = redirect
+dependencies[] = references
+dependencies[] = rules
+dependencies[] = rules_scheduler
+dependencies[] = rules_admin
+dependencies[] = scheduler
+dependencies[] = site_verify
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = transliteration
+dependencies[] = user_reference
+dependencies[] = views
+dependencies[] = views_content
+dependencies[] = views_bulk_operations
+dependencies[] = views_ui
+dependencies[] = views_slideshow
+dependencies[] = views_slideshow_cycle
+dependencies[] = webform
+dependencies[] = wysiwyg
+dependencies[] = xmlsitemap
+dependencies[] = xmlsitemap_custom
+dependencies[] = xmlsitemap_engines
+dependencies[] = xmlsitemap_menu
+dependencies[] = xmlsitemap_node
+dependencies[] = xmlsitemap_taxonomy
+
+; Features
+
+dependencies[] = cm_default_content
+dependencies[] = cm_defaults
+dependencies[] = cm_events_calendar
+dependencies[] = cm_location
+dependencies[] = cm_media_gallery
+dependencies[] = cm_panel
+dependencies[] = cm_rotator
+
+files[] = cm.profile
+
+; Users
+
+users[admin][uid]    = 1
+users[admin][name]   = admin
+users[admin][mail]   = admin@admin
+users[admin][roles]  = administrator
+users[admin][status] = 1
+
+
+; Information added by Drupal.org packaging script on 2016-01-21
+version = "7.x-1.32"
+core = "7.x"
+project = "cm"
+datestamp = "1453409538"
+

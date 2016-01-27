@@ -1,0 +1,19 @@
+name = Default Content
+description = A collection of sample content and documentation for the initial installation and configuration of your site.
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = cm_default_content
+dependencies[] = defaultcontent
+datestamp = 1386014486
+features[content][] = cm-footer
+features[content][] = welcome-to-cm
+features[features_api][] = api:2
+features_exclude[dependencies][defaultcontent] = defaultcontent
+
+; Information added by Drupal.org packaging script on 2016-01-21
+version = "7.x-1.32"
+core = "7.x"
+project = "cm"
+datestamp = "1453409538"
+

@@ -1,0 +1,26 @@
+name = Panel
+description = A content type and settings for panelized content.
+core = 7.x
+package = Features
+version = 7.x-0.33
+project = cm_panel
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = panelizer
+dependencies[] = strongarm
+datestamp = 1384266171
+features[ctools][] = panelizer:panelizer:1
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_instance][] = node-cm_panel-body
+features[node][] = cm_panel
+features[variable][] = page_manager_node_view_disabled
+features[variable][] = panelizer_defaults_node_cm_panel
+
+; Information added by Drupal.org packaging script on 2016-01-21
+version = "7.x-1.32"
+core = "7.x"
+project = "cm"
+datestamp = "1453409538"
+

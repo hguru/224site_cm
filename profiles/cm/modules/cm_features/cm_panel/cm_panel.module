@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Panel feature.
+ */
+
+include_once 'cm_panel.features.inc';

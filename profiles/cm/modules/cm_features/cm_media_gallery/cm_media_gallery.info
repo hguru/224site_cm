@@ -1,0 +1,46 @@
+name = Media Gallery
+description = Provides lightbox gallery support for images and videos via Media module.
+core = 7.x
+package = Features
+version = 7.x-0.33
+project = cm_media_gallery
+dependencies[] = colorbox
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = file
+dependencies[] = image
+dependencies[] = media
+dependencies[] = strongarm
+dependencies[] = text
+datestamp = 1384266171
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_cm_media_gallery_files
+features[field_base][] = field_image_description
+features[field_instance][] = file-image-field_image_description
+features[field_instance][] = node-media_gallery-body
+features[field_instance][] = node-media_gallery-field_cm_media_gallery_files
+features[image][] = cm_media_gallery_full_size
+features[image][] = cm_media_gallery_square_thumbnail
+features[node][] = media_gallery
+features[variable][] = comment_anonymous_media_gallery
+features[variable][] = comment_default_mode_media_gallery
+features[variable][] = comment_default_per_page_media_gallery
+features[variable][] = comment_form_location_media_gallery
+features[variable][] = comment_media_gallery
+features[variable][] = comment_preview_media_gallery
+features[variable][] = comment_subject_field_media_gallery
+features[variable][] = field_bundle_settings_node__media_gallery
+features[variable][] = menu_options_media_gallery
+features[variable][] = menu_parent_media_gallery
+features[variable][] = node_options_media_gallery
+features[variable][] = node_preview_media_gallery
+features[variable][] = node_submitted_media_gallery
+
+; Information added by Drupal.org packaging script on 2016-01-21
+version = "7.x-1.32"
+core = "7.x"
+project = "cm"
+datestamp = "1453409538"
+

@@ -1,0 +1,11 @@
+language: php
+php:
+- 5.5
+- 5.4
+
+script:
+- travis.sh
+
+notifications:
+  slack:
+    secure: TuH082BihMtKWnUt2N9Bds3Hgc4fw38iOroDbgQYqJc8eLPvVrE2muOsGBRainmvCjGQUYC9GHsEZFoH8SDdaWE6Rns1LQmglH3iCYP2ifPn7qKzfsq3/zj3P311ao6pn7vootYX/qLoYupy2ZC6PPbGLVmppB7keBHrP8tcIg4=

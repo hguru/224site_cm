@@ -1,0 +1,47 @@
+name = Rotator
+description = A content type and a view for displaying a rotator.
+core = 7.x
+package = Features
+version = 7.x-0.33
+project = cm_rotator
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = image
+dependencies[] = link
+dependencies[] = media
+dependencies[] = strongarm
+dependencies[] = views
+stylesheets[all][] = theme/cm_rotator.css
+datestamp = 1384266171
+features[ctools][] = strongarm:strongarm:1
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_cm_rotator_item_image
+features[field_base][] = field_cm_rotator_item_url
+features[field_instance][] = node-cm_rotator_item-body
+features[field_instance][] = node-cm_rotator_item-field_cm_rotator_item_image
+features[field_instance][] = node-cm_rotator_item-field_cm_rotator_item_url
+features[image][] = cm_rotator_image
+features[node][] = cm_rotator_item
+features[variable][] = comment_anonymous_cm_rotator_item
+features[variable][] = comment_cm_rotator_item
+features[variable][] = comment_default_mode_cm_rotator_item
+features[variable][] = comment_default_per_page_cm_rotator_item
+features[variable][] = comment_form_location_cm_rotator_item
+features[variable][] = comment_preview_cm_rotator_item
+features[variable][] = comment_subject_field_cm_rotator_item
+features[variable][] = field_bundle_settings_node__cm_rotator_item
+features[variable][] = menu_options_cm_rotator_item
+features[variable][] = menu_parent_cm_rotator_item
+features[variable][] = node_options_cm_rotator_item
+features[variable][] = node_preview_cm_rotator_item
+features[variable][] = node_submitted_cm_rotator_item
+features[views_view][] = cm_rotator
+
+; Information added by Drupal.org packaging script on 2016-01-21
+version = "7.x-1.32"
+core = "7.x"
+project = "cm"
+datestamp = "1453409538"
+

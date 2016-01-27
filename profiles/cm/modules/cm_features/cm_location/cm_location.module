@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the cm_location feature.
+ */
+
+include_once('cm_location.features.inc');

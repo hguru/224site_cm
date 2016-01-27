@@ -1,0 +1,29 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+
+.site-name-slogan {
+  left: 120px;
+  top: -66px;
+}
+
+#block-nice-menus-1 {
+  position: relative;
+  top: -2em;
+}
+
+#block-nice-menus-1 ul {
+  text-align: center;
+  width: 100%
+}
+
+#block-nice-menus-1 li {
+  display: inline-block;
+  float: none;
+}
+
+#block-search-form {
+  right: 0px;
+  top: -120px;
+}

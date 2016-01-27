@@ -1,0 +1,90 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+/* Fonts */
+
+body {
+  font: 13px/1.5 Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.05em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* Layout */
+
+body {
+  background: #eef2f6;
+}
+
+#page {
+  padding-top: 10px;
+}
+
+#block-system-main-menu,
+.logo-img,
+.site-name-slogan,
+#block-search-form {
+  margin: 1em 0px;
+}
+
+.logo-img {
+  width: 100%;
+  text-align: center;
+}
+
+.site-name-slogan {
+  color: #666;
+  font-style: italic;
+  float: none;
+  text-align: center;
+}
+
+#block-search-form {
+  text-align: center;
+}
+
+#block-nice-menus-1 .block-title {
+  display: none;
+}
+
+#block-nice-menus-1 ul {
+  border: none;
+  width: 100%;
+}
+
+#block-nice-menus-1 ul li {
+  background: transparent;
+  border: none;
+  float: none;
+  list-style: none;
+  text-align: center;
+}
+
+/* locations View */
+
+/* Hide OpenLayers Map Popup - http://drupal.org/node/1540534 */
+
+.olLayerGooglePoweredBy.olLayerGoogleV3.gmnoprint {
+visibility:hidden;
+}
+
+.openlayers-popup {
+  color: #EEEEEE;
+}
+
+.openlayers-popup .openlayers-tooltip-name a:link,
+.openlayers-popup .openlayers-tooltip-name a:visited,
+.openlayers-popup .openlayers-tooltip-name a:hover,
+.openlayers-popup .openlayers-tooltip-name a:active {
+  color: #66AAFF;
+}
+
+/* Override Omega formalize css' effects on Colorbox */
+
+#colorbox button,
+#colorbox input {
+  border: 0px none;
+}
+
